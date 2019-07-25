@@ -11,14 +11,8 @@ table, th, td
 
 function myFunction(first_name,last_name,email) 
 {
-    //var id1 = $(this).data("first_name");
-	 //return name;
-	//document.write(id);
-	
-	//window.alert(first_name);
-	//window.alert(email);
 	alert( "Name:  " + first_name + " " + last_name + " \nEmail: " + email + ".");
-	//document.getElementById("info_button").innerHTML = name;
+	
 }
 </script>
 </head>
@@ -49,7 +43,6 @@ for($i=0;$i<count($people);$i++)
   echo('<td>' . $people[$i]['first_name'] . '</td>');
   echo('<td>' . $people[$i]['last_name'] . '</td>');
   echo('<td>' . $people[$i]['email'] . '</td>');
- // echo('<td><Button id="info_button" onclick="myFunction(' . $people[$i]['id'].','.$people[$i]['first_name'] . ');">Alert</Button></td>');
   echo('<td><Button id="info_button" onclick="myFunction(\'' . $people[$i]['first_name'] .'\',\'' . $people[$i]['last_name'] .'\',\'' . $people[$i]['email'] .'\');">Alert</Button></td>');
   echo('</tr>');
 } ?>
